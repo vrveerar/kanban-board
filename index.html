@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Arvo|Lato:400,700" rel="stylesheet">
+    <link href="./reset.css" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <input class="modal-state" id="modal-task" type="checkbox" />
+    <div class="modal">
+        <label class="modal__bg" for="modal-task"></label>
+        <div class="modal__inner">
+            <label class="modal__close" for="modal-task"></label>
+            <h2>Add a New Task</h2>
+            <p>This is where we will display the form to add a new task.</p>
+        </div>
+    </div>
+
+    <header>
+        <svg width="30vw" height="15vh">
+            <image href="./images/salesforce.svg" width="30vw" height="15vh" />
+        </svg>
+        <div class="progress-bar">
+            <div class="empty-bar"></div>
+            <div class="fill-bar"></div>
+            <div class="stats">
+                <p><span class="highlight">25%</span> complete</p>
+                <p>1 of 4 tasks complete</p>
+            </div>
+            <label class='btn' for='modal-task'>New Task</label>
+        </div>
+    </header>
+
+    <main class='board'>
+
+        <div class='kanban-container'>
+
+            <div class='col'>
+                <h2>Backlog</h2>
+
+                <div class='card'>
+                    <div class='name turquoise'>Lisa</div>
+                    <h3 class='title'>Integrate Platform Events</h3>
+                    <p class='date'>July 7 2019</p>
+                    <section class='taskDescription'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea magnam
+                        beatae ducimus fugiat
+                        mollitia sint, provident recusandae laborum suscipit ab, minus unde quis dicta, vel amet!
+                    </section>
+
+                </div>
+
+            </div>
+
+
+
+            <div class='col'>
+                <h2>In Progress</h2>
+
+                <div class='card'>
+                    <div class='name orange'>Steven</div>
+                    <h3 class='title'>Build Kanban Board</h3>
+                    <p class='date'>May 30 2019</p>
+                    <section class='taskDescription'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos
+                        adipisci temporibus odit ea mollitia commodi, quia rerum provident, deserunt sapiente
+                        ratione
+                        reprehenderit perspiciatis itaque eaque.</section>
+                </div>
+
+                <div class='card'>
+                    <div class='name green'>Jennifer</div>
+                    <h3 class='title'>Prepare Presentation</h3>
+                    <p class='date'>June 2 2019</p>
+                    <section class='taskDescription'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+                        quis explicabo cumque sit reiciendis voluptatibus porro nihil eos quibusdam.</section>
+
+                </div>
+
+            </div>
+
+
+            <div class='col'>
+                <h2>Complete</h2>
+
+                <div class='card'>
+                    <div class='name blue'>Michael</div>
+                    <h3 class='title'>Complete Prework</h3>
+                    <p class='date'>April 26 2019</p>
+                    <section class='taskDescription'>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Pariatur voluptas, ea sunt eaque consequuntur repudiandae quos dolor maxime ipsa ratione.
+                    </section>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+</body>
+
+</html>
